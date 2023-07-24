@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+
+            select, input[type="submit"] {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Prompt category</h1>
+    <form>
+        <!-- Marketing category dropdown -->
+        <label for="marketing">Marketing:</label><br>
+        <select id="marketing" name="marketing">
+            <option value="Positioning">Positioning</option>
+            <option value="Outreach">Outreach</option>
+            <option value="CallToAction">Call to Action</option>
+            <option value="Subject Lines">Subject Lines</option>
+			<option value="Product Description">Product Description</option>
+			<option value="Link Building">Link Building</option>
+			<option value="Copywriting">Copywriting</option>
+			<option value="SEO">SEO</option>
+        </select>
+        <br>
+
+        <!-- Products category dropdown -->
+        <label for="products">Products:</label><br>
+        <select id="products" name="products">
+            <option value="Summarize">Summarize</option>
+            <option value="Research">Research</option>
+            <option value="Segmentation">Segmentation of Audience</option>
+            <option value="Unmet Category-Related Needs">Unmet Category-Related Needs</option>
+			<option value="Ideation">Ideation</option>
+			<option value="Dall-E">Dall-E</option>
+			<option value="Stable Diffusion">Stable Diffusion</option>
+			<option value="Midjourney">Midjourney</option>
+        </select>
+        <br>
+
+        <!-- Writing category dropdown -->
+        <label for="writing">Writing:</label><br>
+        <select id="writing" name="writing">
+            <option value="ScriptWriting">Script Writing</option>
+            <option value="Improve">Improve</option>
+            <option value="Summarize">Summarize</option>
+            <option value="Research">Research</option>
+			<option value="Descriptive">Descriptive</option>
+			<option value="Epigrammatic">Epigrammatic</option>
+			<option value="Epistolary">Epistolary</option>
+			<option value="Expository">Expository</option>
+			<option value="Informative">Informative</option>
+			<option value="Instructive">Instructive</option>
+			<option value="Journalistic">Journalistic</option>
+			<option value="Metaphorical">Metaphorical</option>
+			<option value="Narrative">Narrative</option>
+			<option value="Persuasive">Persuasive</option>
+			<option value="Poetic">Poetic</option>
+			<option value="Satirical">Satirical</option>
+			<option value="Technical">Technical</option>
+        </select>
+        <br>
+		
+		<!-- web development category dropdown -->
+        <label for="web development">web development:</label><br>
+        <select id="web development" name="web development">
+            <option value="Text Editor">Text Editor</option>
+            <option value="Version Control">Version Control</option>
+			<option value="Spreadsheets">Spreadsheets</option>
+			<option value="Design">Design</option>
+			<option value="Backend Development">Backend Development</option>
+			<option value="Database Administration">Database Administration</option>
+			<option value="Containerization">Containerization</option>
+        </select>
+        <br>
+		
+		<!-- Accounting category dropdown -->
+        <label for="Accounting">Accounting:</label><br>
+        <select id="Accounting" name="Accounting">
+            <option value="Pricing">Pricing</option>
+            <option value="Refunds">Refunds</option>
+			<option value="Trial">Trial</option>
+			<option value="Quota">Quota</option>
+			<option value="CRM">CRM</option>
+        </select>
+        <br>
+		
+		<!-- Professions category dropdown -->
+        <label for="Professions">Professions:</label><br>
+        <select id="Professions" name="Professions">
+            <option value="Programmer">Programmer</option>
+            <option value="Doctor">Doctor</option>
+			<option value="Teacher">Teacher</option>
+			<option value="Writer">Writer</option>
+			<option value="Spoken Improver">Spoken Improver</option>
+			<option value="Coach">Coach</option>
+			<option value="Consultant">Consultant</option>
+			<option value="History">History</option>
+			<option value="Super Hero">Super Hero</option>
+			<option value="Cartoon">Cartoon</option>
+			<option value="Celebrity">Celebrity</option>
+			<option value="Athletes">Athletes</option>
+        </select>
+        <br>
+		
+		<!-- Software engineering category dropdown -->
+        <label for="Software engineering">Software engineering:</label><br>
+        <select id="Software engineering" name="Software engineering">
+            <option value="Software Application">Software Application</option>
+            <option value="DevOps">DevOps</option>
+			<option value="SAAS">SAAS</option>
+			<option value="Operating Systems">Operating Systems</option>
+        </select>
+        <br>
+		
+		<!-- Tone/Style of Writing category dropdown -->
+        <label for="Tone/Style of Writing">Tone/Style of Writing:</label><br>
+        <select id="Tone/Style of Writing" name="Tone/Style of Writing">
+            <option value="Default">Default</option>
+            <option value="Authoritative">Authoritative</option>
+			<option value="Clinical">Clinical</option>
+			<option value="Cold">Cold</option>
+			<option value="Confident">Confident</option>
+			<option value="Cynical">Cynical</option>
+			<option value="Emotional">Emotional</option>
+			<option value="Empathetic">Empathetic</option>
+			<option value="Formal">Formal</option>
+			<option value="Friendly">Friendly</option>
+			<option value="Humorous">Humorous</option>
+			<option value="Informal">Informal</option>
+			<option value="Ironic">Ironic</option>
+			<option value="Optimistic">Optimistic</option>
+        </select>
+        <br>
+
+		<!-- Sports Writing category dropdown -->
+        <label for="Sports Writing">Sports Writing:</label><br>
+        <select id="Sports Writing" name="Sports Writing">
+            <option value="Informative">Informative</option>
+            <option value="Descriptive">Descriptive</option>
+			<option value="Narrative">Narrative</option>
+			<option value="Persuasive">Persuasive</option>
+        </select>
+        <br>
+		
+		<!-- Generative AI category dropdown -->
+        <label for="Generative AI">Generative AI:</label><br>
+        <select id="Generative AI" name="Generative AI">
+            <option value="Dall-E">Dall-E</option>
+            <option value="Copywriting">Copywriting</option>
+			<option value="SEO">SEO</option>
+        </select>
+        <br>
+		
+		<!-- Productivity category dropdown -->
+        <label for="Productivity">Productivity:</label><br>
+        <select id="Productivity" name="Productivity">
+            <option value="Research">Research</option>
+            <option value="Marketing">Marketing</option>
+			<option value="Summarize">Summarize</option>
+        </select>
+        <br>
+
+    </form>
+</body>
+</html>
